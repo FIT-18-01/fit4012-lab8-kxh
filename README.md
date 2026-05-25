@@ -11,40 +11,58 @@ Lab 8 kế thừa cách tổ chức repo của Lab 6 socket starter, nhưng thay
 
 > Lưu ý quan trọng: DES hiện không còn an toàn cho hệ thống thật vì kích thước khóa nhỏ. Repo này dùng DES theo đúng yêu cầu bài thực hành để sinh viên hiểu cơ chế mã hóa lai, kiểm tra toàn vẹn và bảo vệ khóa đối xứng.
 
----
 
-## Team members
 
-- **Thành viên 1**: TODO_MEMBER_1 - MSSV: TODO_MEMBER_1_ID
-- **Thành viên 2**: TODO_MEMBER_2 - MSSV: TODO_MEMBER_2_ID
+## Team Members
 
-## Task division
-
-- **Thành viên 1 phụ trách chính**: TODO_ROLE_MEMBER_1
-- **Thành viên 2 phụ trách chính**: TODO_ROLE_MEMBER_2
-- **Phần làm chung**: TODO_SHARED_WORK
-
-## Demo roles
-
-- **Demo Sender / mã hóa / log gửi**: TODO_DEMO_ROLE_1
-- **Demo Receiver / giải mã / kiểm tra hash**: TODO_DEMO_ROLE_2
-- **Cả hai cùng trả lời câu hỏi mở rộng AES và chữ ký số**: TODO_DEMO_ROLE_SHARED
+- **Đỗ Trung Kiên** - MSSV: **1871020344**
+- **Trương Triệu Việt Hoàng** - MSSV: **1871020252**
 
 ---
 
-## Mục tiêu học tập
+## Task Division
+
+| Thành viên | Công việc phụ trách |
+|---|---|
+| **Đỗ Trung Kiên** | Xây dựng `sender.py`, xử lý DES-CBC encryption, tạo packet truyền dữ liệu, logging sender |
+| **Trương Triệu Việt Hoàng** | Xây dựng `receiver.py`, RSA-OAEP decrypt DES key, kiểm tra SHA-256, logging receiver |
+| **Cả nhóm** | Testing, viết báo cáo, demo hệ thống, xử lý lỗi socket và hoàn thiện README |
+
+---
+
+## Demo Roles
+
+| Vai trò | Thành viên |
+|---|---|
+| Demo Sender / mã hóa / log gửi | **Đỗ Trung Kiên** |
+| Demo Receiver / giải mã / kiểm tra hash | **Trương Triệu Việt Hoàng** |
+| Trả lời câu hỏi mở rộng AES & chữ ký số | **Cả hai thành viên** |
+
+---
+
+## Mục tiêu bài Lab
 
 Sau bài lab này, sinh viên có thể:
 
-- Mô tả được luồng truyền dữ liệu an toàn giữa Sender và Receiver qua TCP socket.
-- Cài đặt được DES-CBC với key, IV và PKCS#7 padding.
-- Tính và kiểm tra được SHA-256 để phát hiện dữ liệu bị thay đổi.
-- Sử dụng RSA-OAEP để mã hóa khóa DES trước khi truyền.
-- Thiết kế được packet có header độ dài cho dữ liệu nhị phân.
-- Viết test cho các tình huống đúng, sai định dạng, sai hash và dữ liệu bị can thiệp.
-- Phân tích được hạn chế của DES và đề xuất nâng cấp lên AES/chữ ký số.
+- Hiểu mô hình mã hóa lai Hybrid Encryption.
+- Sử dụng DES-CBC để mã hóa dữ liệu.
+- Sử dụng SHA-256 để kiểm tra tính toàn vẹn dữ liệu.
+- Sử dụng RSA-OAEP để bảo vệ khóa DES.
+- Truyền dữ liệu an toàn qua TCP Socket.
+- Thiết kế packet nhị phân có header độ dài.
+- Viết test kiểm tra dữ liệu bị sửa đổi hoặc lỗi packet.
 
 ---
+
+## Công nghệ sử dụng
+
+- Python
+- TCP Socket
+- DES-CBC
+- SHA-256
+- RSA-OAEP
+- PyCryptodome
+- Pytest
 
 ## Cấu trúc repo
 

@@ -1,0 +1,7 @@
+[2026-05-25 14:51:09] [HỆ THỐNG] | IP: Local | Trạng thái: Khởi động | Hash: N/A | Nội dung: Bắt đầu phiên chat tại port 6000 với 192.168.61.204:6001
+[2026-05-25 14:51:15] [GỬI] | IP: 192.168.61.204 | Trạng thái: ✅ Đã mã hóa và Ký số | Hash: 780a1ec0b7aaad32...dd36ccadb51f7b14 | Nội dung: alo 
+[2026-05-25 14:51:18] [NHẬN] | IP: 192.168.61.204 | Trạng thái: ✅ Xác minh chữ ký hợp lệ | Hash: 3af756f861f84901...736db7b80e5059ac | Nội dung: vu a vu
+[2026-05-25 14:51:48] [NHẬN] | IP: 192.168.61.204 | Trạng thái: ✅ Xác minh chữ ký hợp lệ | Hash: e3281c1b82e04b2d...e5550b3564b250cc | Nội dung: alo
+[2026-05-25 15:03:31] [GỬI] | IP: 192.168.61.204 | Trạng thái: ✅ Đã mã hóa và Ký số | Hash: 84c5b5ec6a2f3d58...b52ff96be846968a | Nội dung: kkkk
+[2026-05-25 15:03:36] [NHẬN] | IP: 192.168.61.204 | Trạng thái: ✅ Xác minh chữ ký hợp lệ | Hash: 637c44fb4038f28c...c6f58d8f511112ff | Nội dung: gvhg
+[2026-05-25 15:05:27] [GỬI] | IP: 192.168.61.204 | Trạng thái: ✅ Đã mã hóa và Ký số | Hash: ec2f95719d630a24...b9c1d98f4100e3f4 | Nội dung: alo a
